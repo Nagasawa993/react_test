@@ -21,6 +21,10 @@ function Collection() {
     const handleClick2 = () => {
         window.open(image_test);
     };
+    const showConsole = () => {
+      console.log("ボタンクリック！");
+  };
+
   return (
     <>
       <div className='parent-container'>
@@ -28,6 +32,7 @@ function Collection() {
           <button onClick={goToTop}>TOP</button>
           <button onClick={goToProfile}>プロフィール</button>
           <button onClick={goToCollection}>作品一覧</button>
+          <button onClick={showConsole}>ボタンクリック！</button>
         </div>
         <div className='collection-content'>
         <h1>作品一覧</h1>
